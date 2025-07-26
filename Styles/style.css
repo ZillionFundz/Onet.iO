@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #cacbcc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0166ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2px; */
+    padding: 10px 10px;
+}
+
+.navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 130px;
+    height: 40px;
+    background: #c1c2d6;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 0px;
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    color: #fff;
+}
+
+.logo img {
+    width: 80px;
+    margin: 0px;
+    padding: 0px;
+    /* margin-left: 20px; */
+}
+
+
+.container {
+    margin: auto;
+    padding: 20px;
+    /* background: linear-gradient(#0456ee, #283a6a, #0456ee); */
+    background: #8088959c;
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+
+@media screen {}
+
+.wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* overflow: hidden; */
+}
+
+.wrapper img {
+    max-width: 40%;
+    border-radius: 20px;
+}
+
+.section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-top h1 {
+    font-size: 4rem;
+    margin: auto;
+    padding-bottom: 10px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.section-top span {
+    font-size: 1.5rem;
+    margin: 20px 2px;
+    padding: 0px;
+    text-align: center;
+}
+
+.cta-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 0px;
+    padding: 5px;
+}
+
+.cta-btns button {
+    font-size: 22px;
+    width: 145px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 2px 5px;
+}
+
+.cta-btns #products {
+    background: #0166ff;
+}
+
+.cta-btns #services {
+    background: #c1c2d6;
+}

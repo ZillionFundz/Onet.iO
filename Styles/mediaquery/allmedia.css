@@ -1,0 +1,15 @@
+@media screen and (max-width: 870px) {
+    .navbar .hideOnMobile {
+        display: none;
+    }
+
+    .navbar .menu-button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+    }
+}

@@ -202,7 +202,7 @@ ul li a:hover {
 }
 
 .wrapper img {
-    width: 50%;
+    width: 42%;
     border-radius: 20px;
 }
 
@@ -378,4 +378,5 @@ ul li a:hover {
         margin: 5px 0px;
         padding: 10px;
     }
+
 }

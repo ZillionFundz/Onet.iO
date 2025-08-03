@@ -17,8 +17,9 @@
         </div>
 
         <ul class="sidebar"> <!-- Hamburger Menu -->
-            <li id="hideSidebar" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                        viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <li class="menuClose-button" id="hideSidebar" onclick=hideSidebar()><a href="#"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                     </svg></a></li>
@@ -28,12 +29,12 @@
             <li id="wallet"><a href="wallet.html">Wallet</a></li>
         </ul>
 
-        <ul>
+        <ul><!-- Main Navigation Menu -->
             <li class="hideOnMobile" id="home"><a href="index.html">Home</a></li>
             <li class="hideOnMobile" id="about"><a href="#">About</a></li>
             <li class="hideOnMobile" id="contact"><a href="support.html">Support</a></li>
             <li class="hideOnMobile" id="wallet"><a href="wallet.html">Wallet</a></li>
-            <li class="menu-button" id="showSidebar" onclick=showSidebar()><a href="#"><svg
+            <li class="menuOpen-button" id="showSidebar" onclick=showSidebar()><a href="#"><svg
                         xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#1f1f1f">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />

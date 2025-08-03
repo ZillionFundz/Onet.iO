@@ -110,25 +110,29 @@ ul li a:hover {
 }
 
 .sidebar {
-
+    position: relative;
     position: fixed;
     padding: 10px 20px;
-    top: -10px;
+    /* top: -10; */
+    bottom: 0;
     right: 0;
     backdrop-filter: blur(10px);
-    width: 200px;
+    /* width: 20vw; */
     height: 100vh;
     z-index: 999;
-    background: rgba(178, 179, 197, 0.363);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    /* background: rgba(1, 103, 255, 0.465); */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.231);
     align-items: flex-start;
     justify-content: flex-start;
     display: none;
     flex-direction: column;
     list-style: none;
-
+    outline: 2px dashed #000;
 }
 
+.navbar .sidebar li {
+    width: 200px;
+}
 
 
 @media (min-aspect-ratio: 16/9) {
@@ -346,21 +350,31 @@ ul li a:hover {
         border-radius: 5px;
     }
 
+    .navbar .sidebar {
+        width: 40vw;
+        height: 100vh;
+        display: none;
+        margin: 0px;
+        padding: 20px 0px 200px;
+        background: rgba(1, 103, 255, 0.465);
+    }
+
     .sidebar .menuClose-button {
         /* font-size: 5rem; */
         font-weight: bold;
         background: #6236e7;
         width: 200px;
+        margin-bottom: 70px;
     }
 
-    .navbar .sidebar {
-        width: 50vw;
-        /* height: 100vh; */
-        display: none;
+    .sidebar hr {
+        display: flex;
+        width: 200px;
         margin: 0px;
-        padding: 200px 0px;
-        background-color: #0166ff;
-        /* outline: 10px solid #6236e7; */
+        border: 2px solid #000;
+        position: absolute;
+        top: 90px;
+        z-index: 1;
     }
 
 }
@@ -380,6 +394,16 @@ ul li a:hover {
         margin: 5px 0px;
         padding: 10px;
     }
+
+    .navbar .sidebar {
+        width: 50vw;
+        height: 100vh;
+        display: none;
+        margin: 0px;
+        padding: 20px 0px 650px;
+        background: rgba(1, 103, 255, 0.465);
+    }
+
 }
 
 
@@ -408,4 +432,15 @@ ul li a:hover {
         margin: 5px 0px;
         padding: 10px;
     }
+
+    .navbar .sidebar {
+        top: 0;
+        width: 80vw;
+        height: 100vh;
+        display: none;
+        margin: 0px;
+        padding: 20px 0px 650px;
+        background: rgba(1, 103, 255, 0.465);
+    }
+
 }

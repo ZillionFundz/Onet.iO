@@ -93,7 +93,7 @@ ul li a:hover {
     color: #d3e7fb;
 }
 
-.navbar .menu-button {
+.navbar .menuOpen-button {
     display: none;
 }
 
@@ -129,41 +129,6 @@ ul li a:hover {
 
 }
 
-.sidebar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 2px; */
-    padding: 10px 10px;
-}
-
-.sidebar li {
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    width: 100%;
-    height: 40px;
-    background: #ef08a6;
-    border-radius: 4px;
-    margin: 2px;
-    padding: 0px;
-    text-align: center;
-    display: flex;
-}
-
-
-.sidebar a {
-    width: 100%;
-    color: #0166ff;
-}
-
-.sidebar a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 5px;
-    color: #000;
-}
 
 
 @media (min-aspect-ratio: 16/9) {
@@ -183,15 +148,15 @@ ul li a:hover {
 
 .container {
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     /* background: linear-gradient(#0456ee, #283a6a, #0456ee); */
-    background: #8088959c;
+    background: #c5c8cc;
     /* width: 100%; */
     /* overflow: hidden; */
 }
 
 
-.wrapper {
+.wrapper1 {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -199,22 +164,56 @@ ul li a:hover {
     /* overflow: hidden; */
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
+    background-image: linear-gradient(180deg, #c5c8cc, 50%, #9aa6b8 100%);
+    padding: 20px;
 }
 
-.wrapper img {
+.wrapper2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* overflow: hidden; */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-image: linear-gradient(360deg, #c5c8cc, 50%, #9aa6b8 100%);
+    padding: 20px;
+}
+
+.wrapper1 img {
     width: 42%;
     border-radius: 20px;
 }
 
-.highlight-note {
+.wrapper2 img {
+    width: 42%;
+    border-radius: 20px;
+}
+
+.highlight-notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0px;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 20px;
 }
 
-.highlight-note h1 {
+.highlight-notes h1 {
     text-align: center;
     margin: 2px 0px;
+}
+
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.ads img {
+    width: 100%;
 }
 
 .section-top {
@@ -245,7 +244,7 @@ ul li a:hover {
 }
 
 .cta-btns {
-    max-width: 400px;
+    max-width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -257,11 +256,12 @@ ul li a:hover {
 }
 
 .cta-btns button {
-    font-size: 22px;
-    width: 150px;
+    font-size: 1.5rem;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     margin: 2px 5px;
+    padding: 0px 20px;
 }
 
 .cta-btns #products {
@@ -340,18 +340,48 @@ ul li a:hover {
         display: none;
     }
 
-    .navbar .menu-button {
+    .navbar .menuOpen-button {
         display: block;
         padding-top: 7px;
         border-radius: 5px;
     }
 
+    .sidebar .menuClose-button {
+        /* font-size: 5rem; */
+        font-weight: bold;
+        background: #6236e7;
+        width: 200px;
+    }
+
     .navbar .sidebar {
         width: 50vw;
+        /* height: 100vh; */
         display: none;
+        margin: 0px;
+        padding: 200px 0px;
+        background-color: #0166ff;
+        /* outline: 10px solid #6236e7; */
     }
 
 }
+
+@media screen and (max-width: 775px) {
+    .wrapper1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper1 img {
+        min-width: 80%;
+        background-color: #0166ff;
+        border-radius: 20px;
+        margin: 5px 0px;
+        padding: 10px;
+    }
+}
+
 
 @media screen and (max-width: 425px) {
 
@@ -364,19 +394,18 @@ ul li a:hover {
         font-size: 1.2rem;
     }
 
-    .wrapper {
+    .wrapper1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .wrapper img {
+    .wrapper1 img {
         min-width: 100%;
         background-color: #0166ff;
         border-radius: 20px;
         margin: 5px 0px;
         padding: 10px;
     }
-
 }

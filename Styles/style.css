@@ -159,6 +159,18 @@ ul li a:hover {
     /* overflow: hidden; */
 }
 
+#bgimg {
+    background-image: url('/Images/Tech-Company2.jpg');
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -1;
+}
+
 
 .wrapper1 {
     display: flex;
@@ -168,7 +180,7 @@ ul li a:hover {
     /* overflow: hidden; */
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    background-image: linear-gradient(180deg, #c5c8cc, 50%, #9aa6b8 100%);
+    background-image: linear-gradient(180deg, #cdd5da, 50%, #9aa6b8 100%);
     padding: 20px;
 }
 

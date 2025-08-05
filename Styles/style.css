@@ -214,6 +214,7 @@ ul li a:hover {
     margin: 0px;
     padding: 10px 20px;
     margin-top: 20px;
+    text-align: justify;
 }
 
 .highlight-notes h1 {
@@ -456,3 +457,4 @@ ul li a:hover {
     }
 
 }
+

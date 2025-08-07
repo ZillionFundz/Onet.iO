@@ -38,8 +38,8 @@ body {
     align-items: center;
     background: #0166ff;
     /* background-color: rgb(98, 54, 231); */
-    /* border-bottom: 8px solid #5025D1; */
-    border-bottom: 8px solid #6236e7;
+    border-bottom: 8px solid #5025D1;
+    /* border-bottom: 8px solid rgb(98, 54, 231); */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 10px 20px;
@@ -61,7 +61,7 @@ body {
     list-style: none;
     width: 14vw;
     height: 40px;
-    background: #6236e7;
+    background: #5025D1;
     border-radius: 5px;
     margin: 2px;
     padding: 24px 10px;
@@ -310,13 +310,13 @@ ul li a:hover {
 }
 
 .cta-btns #products {
-    background: #6236e7;
+    background: #5025D1;
     margin: 2px;
     /* padding: 2px; */
 }
 
 .cta-btns #services {
-    background: #c1c2d6;
+    background: #b1b1c1;
     margin: 2px;
     /* padding: 2px; */
 }

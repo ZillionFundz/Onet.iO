@@ -188,7 +188,7 @@ ul li a:hover {
     content: "";
     position: absolute;
     background: #000;
-    background-image: url('/Images/Tech-Company2.jpg');
+    background-image: url('../Images/Tech-Company2.jpg');
     /* max-width: 100%;
     height: auto; */
     min-width: 100%;
@@ -691,4 +691,5 @@ ul li a:hover {
     .highlight-notes p {
         font-size: clamp(16px, 2vw, 80px);
     }
+
 }

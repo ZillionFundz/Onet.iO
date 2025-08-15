@@ -560,7 +560,7 @@ ul li a:hover {
     }
 }
 
-/* Phone - SCREEN SIZE */
+/* Phone - SCREEN SIZE (Large)*/
 @media screen and (max-width: 600px) {
 
     .logo h3 {
@@ -568,13 +568,14 @@ ul li a:hover {
     }
 
     .section-top h1 {
-        font-size: clamp(40px, 2vw, 80px);
-        line-height: 50px;
+        font-size: clamp(45px, 3vw, 80px);
+        line-height: 60px;
     }
 
     .section-top span {
-        font-size: clamp(18px, 4vw, 80px);
+        font-size: clamp(22px, 3vw, 80px);
         padding: 2px;
+        margin-top: 5px;
     }
 
     .cta-btns .cta {
@@ -656,6 +657,8 @@ ul li a:hover {
 
 }
 
+
+/* Phone - SCREEN SIZE (Medium)*/
 @media screen and (max-width: 450px) {
     .logo img {
         width: 50px;
@@ -676,13 +679,56 @@ ul li a:hover {
     }
 
     .section-top h1 {
-        font-size: clamp(28px, 4vw, 80px);
-        line-height: 50px;
+        font-size: clamp(35px, 3vw, 80px);
+        line-height: 45px;
     }
 
     .section-top span {
         font-size: clamp(18px, 2vw, 80px);
         padding: 2px;
+        margin-top: 2px;
+    }
+
+    .highlight-notes h1 {
+        font-size: clamp(20px, 4vw, 100px);
+        margin: 2px 0px;
+        text-align: center;
+    }
+
+    .highlight-notes p {
+        font-size: clamp(16px, 2vw, 80px);
+    }
+}
+
+/* Phone - SCREEN SIZE (Small)*/
+@media screen and (max-width: 350px) {
+    .logo img {
+        width: 50px;
+        margin: 0px;
+        padding: 0px;
+        /* margin-left: 20px; */
+    }
+
+    .logo h3 {
+        font-size: clamp(20px, 2vw, 80px);
+    }
+
+    .navbar .menuOpen-button {
+        font-weight: bold;
+        /* background: #6236e7; */
+        width: 40vw;
+        padding: 5px 5px 10px;
+    }
+
+    .section-top h1 {
+        font-size: clamp(32px, 4vw, 80px);
+        line-height: 45px;
+    }
+
+    .section-top span {
+        font-size: clamp(17px, 2vw, 80px);
+        padding: 2px;
+        margin-top: 2px;
     }
 
     .highlight-notes h1 {

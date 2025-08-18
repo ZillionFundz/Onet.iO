@@ -285,11 +285,12 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80vw;
+    width: 100vw;
     height: auto;
     background: linear-gradient(135deg, #dadcdf, #5025d1);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     /* background: #5025d1; */
+    margin: 10px;
     padding: 10px;
     border-radius: 10px;
     position: relative;
@@ -873,4 +874,5 @@ span.description {
         font-size: clamp(16px, 2vw, 80px);
     }
 }
+
 

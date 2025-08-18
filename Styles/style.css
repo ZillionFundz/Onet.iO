@@ -285,7 +285,7 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    max-width: 70vw;
     height: auto;
     background: linear-gradient(135deg, #dadcdf, #5025d1);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -874,5 +874,6 @@ span.description {
         font-size: clamp(16px, 2vw, 80px);
     }
 }
+
 
 

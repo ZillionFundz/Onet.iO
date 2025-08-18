@@ -300,6 +300,7 @@ ul li a:hover {
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .card-image {
@@ -872,3 +873,4 @@ span.description {
         font-size: clamp(16px, 2vw, 80px);
     }
 }
+

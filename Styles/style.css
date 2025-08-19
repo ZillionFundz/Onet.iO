@@ -181,6 +181,11 @@ ul li a:hover {
     z-index: 1;
 }
 
+.wrapper1 img {
+    width: 42%;
+    border-radius: 20px;
+}
+
 .bgimg {
     position: relative;
 }
@@ -204,28 +209,6 @@ ul li a:hover {
     bottom: 0;
     z-index: -1;
     opacity: 0.4;
-}
-
-.wrapper2 {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    /* overflow: hidden; */
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    background-image: linear-gradient(360deg, #e5e5e6, 50%, #9aa6b8 100%);
-    padding: 20px;
-}
-
-.wrapper1 img {
-    width: 42%;
-    border-radius: 20px;
-}
-
-.wrapper2 img {
-    width: 42%;
-    border-radius: 20px;
 }
 
 .explorer-notes {
@@ -320,8 +303,9 @@ span.overlay-tagname {
     text-align: center;
     margin: 10px;
     padding: 3px 14px;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
+    outline: dashed 1px #000;
     border-radius: 5px;
     font-size: clamp(12px, 1.5vw, 100px);
     font-weight: bold;
@@ -345,9 +329,9 @@ h3.card-title {
 span.description {
     font-size: clamp(12px, 1vw, 100px);
     line-height: 10px;
-    color: #000;
-    margin: 5px;
-    padding: 10px;
+    color: #fff;
+    /* margin: 5px; */
+    /* padding: 10px; */
 }
 
 .button {
@@ -359,8 +343,6 @@ span.description {
     padding: 5px;
 }
 
-
-
 .ads {
     display: flex;
     justify-content: center;
@@ -370,6 +352,28 @@ span.description {
 
 .ads img {
     width: 100%;
+}
+
+.wrapper2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* overflow: hidden; */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-image: linear-gradient(360deg, #e5e5e6, 50%, #9aa6b8 100%);
+    padding: 20px;
+}
+
+.ads img {
+    width: 42%;
+    border-radius: 20px;
+}
+
+.banner p {
+    font-size: clamp(15px, 2vw, 100px);
+    text-align: justify;
 }
 
 .section-top {

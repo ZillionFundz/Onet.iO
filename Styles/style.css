@@ -346,7 +346,7 @@ span.description {
     margin: 10px 0px;
     /* background: #6030ee; */
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 5px;
     /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.231); */
 }
 
@@ -395,7 +395,7 @@ span.description {
     font-size: 12px;
     border-radius: 7px;
     background: #0166FF;
-    padding: 7px;
+    padding: 5px 2px;
     outline: 1px dashed #000;
     font-size: clamp(10px, 2vw, 100px);
 }
@@ -403,7 +403,13 @@ span.description {
 .readmore a {
     text-decoration: none;
     color: #fff;
+    padding: 5px;
 }
+
+.readmore a:hover {
+    color: #000;
+}
+
 
 .readmore:hover {
     padding: 7px;

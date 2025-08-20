@@ -343,7 +343,7 @@ span.description {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0px;
+    margin: 10px 0px;
     /* background: #6030ee; */
     border-radius: 5px;
     padding: 10px;
@@ -387,6 +387,7 @@ span.description {
     font-size: clamp(12px, 2vw, 100px);
     margin: 0px;
     padding: 0px;
+    color: #80b3ff;
 }
 
 .readmore {
@@ -394,7 +395,8 @@ span.description {
     font-size: 12px;
     border-radius: 7px;
     background: #0166FF;
-    padding: 5px 0.5vw;
+    padding: 7px;
+    outline: 1px dashed #000;
     font-size: clamp(10px, 2vw, 100px);
 }
 

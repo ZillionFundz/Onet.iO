@@ -313,8 +313,13 @@ span.overlay-tagname {
 
 
 .card-content-section {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    max-width: 100%;
     font-size: clamp(14px, 2vw, 100px);
-    padding: 20px;
+    padding: 15px;
     background: #5025d1;
     border-radius: 0px 0px 5px 5px;
 }
@@ -334,13 +339,68 @@ span.description {
     /* padding: 10px; */
 }
 
+.user-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    background: #6030ee;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.231);
+}
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+}
+
+.user-profile img {
+    min-width: 20%;
+    max-width: 25px;
+    height: 20%;
+    padding: 3px;
+    border-radius: 50%;
+    outline: 2px dotted #000;
+}
+
+.user-details {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+    /* gap: 2px; */
+    width: 32vw;
+    text-align: left;
+}
+
+.user-details h4 {
+    margin: 0px;
+    padding: 0px;
+    font-size: clamp(12px, 2vw, 100px);
+}
+
+.user-office {
+    font-size: clamp(12px, 2vw, 100px);
+    margin: 0px;
+    padding: 0px;
+}
+
 .button {
-    width: 100px;
+    max-width: 50%;
     font-size: 12px;
     border-radius: 7px;
-    background: #b7b7c4;
-    margin: 5px;
-    padding: 5px;
+    background: #0166FF;
+    padding: 5px 0.5vw;
+    font-size: clamp(10px, 2vw, 100px);
+}
+
+.button:hover {
+    padding: 7px;
+    background: #a2a5ac;
 }
 
 .ads {

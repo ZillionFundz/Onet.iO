@@ -344,10 +344,10 @@ span.description {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px;
-    background: #6030ee;
+    /* background: #6030ee; */
     border-radius: 5px;
     padding: 10px;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.231);
+    /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.231); */
 }
 
 .user-profile {
@@ -389,7 +389,7 @@ span.description {
     padding: 0px;
 }
 
-.button {
+.readmore {
     max-width: 50%;
     font-size: 12px;
     border-radius: 7px;
@@ -398,7 +398,12 @@ span.description {
     font-size: clamp(10px, 2vw, 100px);
 }
 
-.button:hover {
+.readmore a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.readmore:hover {
     padding: 7px;
     background: #a2a5ac;
 }

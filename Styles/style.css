@@ -274,7 +274,8 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 85vw;
+    /* gap: 0px; */
+    max-width: 100vw;
     height: auto;
     background: linear-gradient(180deg, #dadcdf, #5025d1);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -282,8 +283,6 @@ ul li a:hover {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    position: relative;
-    z-index: 0;
 }
 
 .card-image img {
@@ -292,10 +291,14 @@ ul li a:hover {
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 5px 5px 0px 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .card-image {
     position: relative;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -322,23 +325,31 @@ span.overlay-tagname {
 .card-content-section {
     max-width: 100%;
     font-size: clamp(14px, 2vw, 100px);
-    padding: 15px;
     /* background: #5025d1; */
+    /* background: linear-gradient(360deg, #dadcdf, #5025d1); */
     border-radius: 0px 0px 5px 5px;
     /* text-align: center; */
+    margin: 0px;
+    padding: 15px;
+    position: relative;
+    z-index: 999;
 }
 
-card-wrapper::before {
+.card-content-section::before {
     content: "";
-    position: absolute;
-    background: #0525d1;
-    width: 50px;
-    height: 100px;
-    top: 0;
+    background: linear-gradient(360deg, #dadcdf, #5025d1);
+    border-radius: 0px 0px 5px 5px;
+    /* width: 50%; */
+    /* height: 500px; */
+    top: 0px;
+    bottom: 0;
     left: 0;
-    /* opacity: 0.8; */
-    /* transform: translate(-50% -50%); */
-    z-index: 999;
+    right: 0;
+    position: absolute;
+    margin: 0px;
+    /* opacity: 0.5; */
+    transform: translate(-50% -50%);
+    z-index: -1;
 }
 
 h3.card-title {
@@ -402,7 +413,8 @@ span.description {
     font-size: clamp(12px, 2vw, 100px);
     margin: 0px;
     padding: 0px;
-    color: #80b3ff;
+    /* color: #80b3ff; */
+    color: #0166FF;
 }
 
 .readmore {
@@ -500,7 +512,8 @@ span.description {
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 5px 35px;
+    padding: 5px 30px;
+    gap: 4px;
 }
 
 .cta-btns .cta {
@@ -515,28 +528,14 @@ span.description {
 
 .cta-btns #products {
     background: #5025D1;
-    margin: 2px;
+    /* margin: 2px; */
     color: #D3E7F6;
     border-radius: 25px;
 }
 
-button.cta {
-    border: none;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-
-/* RIPPLE EFFECT HERE:👇*/
-
-
-
-
-
 .cta-btns #services {
     background: #9393aa;
-    margin: 2px;
-    /* padding: 2px; */
+    /* margin: 2px; */
     border-radius: 25px;
 }
 
@@ -547,9 +546,48 @@ button.cta {
 }
 
 .cta-btns #services:hover {
-    background: #abb1c0;
+    background: #b5c0c9;
     border-radius: 20px;
     color: #2d2e2e;
+}
+
+/* RIPPLE EFFECT HERE:👇*/
+
+.cta-btns #products,
+#services {
+    border: none;
+
+    cursor: pointer;
+    padding: 20px 10px;
+    font-size: clamp(18px, 2vw, 100px);
+    /* box-shadow: -0.1rem 01rem rgba(0, 0, 0, 0.265); */
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+button.cta {
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+button.cta::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    padding: 50%;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(150%, -50%) scale(1);
+    opacity: 0;
+    transition: transform 600ms, opacity 600ms;
+}
+
+button.cta::active::after {
+    transition: 0s;
+    opacity: 0.7;
+    transform: translate(150%, -50%) scale(0);
 }
 
 .parent {
@@ -705,7 +743,7 @@ button.cta {
         /* height: 6vh; */
         border-radius: 10px;
         margin: 2px 5px;
-        padding: 15px 10px;
+        padding: 25px 10px;
     }
 
     .cta-btns .cta:hover {

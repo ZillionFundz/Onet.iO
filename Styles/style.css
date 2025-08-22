@@ -169,7 +169,6 @@ ul li a:hover {
     background: #e2e4e4;
     /* width: 100%; */
     /* overflow: hidden; */
-    width: 100vw;
 }
 
 
@@ -281,7 +280,6 @@ ul li a:hover {
     width: 75vw;
     height: auto;
     background: linear-gradient(180deg, #dadcdf, #5025d1);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     /* background: #5025d1; */
     margin: auto;
     padding: 10px;

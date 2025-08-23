@@ -744,11 +744,25 @@ button.cta::active::after {
     text-align: center;
 }
 
-.testimonials h2 {
-    margin-top: 2rem;
+.testimonial-heading {
+    margin: 0px;
+    padding: 0px;
     margin-bottom: 1.5rem;
-    font-size: 1.5rem;
+}
+
+.testimonial-heading h2 {
+    margin: 0px;
+    margin-top: 2rem;
+    font-size: 1.3rem;
     color: #333;
+    text-transform: uppercase;
+}
+
+.testimonial-heading span {
+    margin: 4px;
+    padding: 0px;
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .testimonials-swiper {
@@ -775,7 +789,7 @@ button.cta::active::after {
 }
 
 .testimonial-details {
-    width: 60%;
+    width: 58%;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -807,7 +821,7 @@ button.cta::active::after {
     margin-bottom: 25px;
     padding: 1.5px;
     border-radius: 50%;
-    border: 0.5px solid #5025d1;
+    border: 2px solid #5025d1;
     /* outline: 1px dotted #000; */
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.5);
 }
@@ -816,7 +830,8 @@ button.cta::active::after {
     font-style: italic;
     font-size: clamp(14px, 0.8rem, 80px);
     margin-bottom: 1rem;
-    width: 35vw;
+    padding: 0px 10px;
+    /* width: 32vw; */
     text-align: center;
 }
 
@@ -827,7 +842,7 @@ button.cta::active::after {
 }
 
 .shot {
-    width: 40%;
+    width: 42%;
     height: 40vh;
     margin: 0px;
     padding: 10px 5px;

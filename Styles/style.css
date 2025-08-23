@@ -747,12 +747,12 @@ button.cta::active::after {
 .testimonial-heading {
     margin: 0px;
     padding: 0px;
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
 .testimonial-heading h2 {
     margin: 0px;
-    margin-top: 2rem;
     font-size: 1.3rem;
     color: #333;
     text-transform: uppercase;

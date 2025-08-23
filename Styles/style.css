@@ -42,11 +42,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #0166ff; */
-    background: #5025d1;
+    background: #0166ff;
+    /* background: #5025d1; */
     /* background-color: rgb(98, 54, 231); */
-    /* border-bottom: 8px solid #5025d1; */
-    border-bottom: 8px solid #0166ff;
+    border-bottom: 8px solid #5025d1;
+    /* border-bottom: 8px solid #0166ff; */
     /* border-bottom: 8px solid rgb(98, 54, 231); */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -771,7 +771,7 @@ button.cta::active::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1px;
+    gap: 2px;
 }
 
 .testimonial-details {
@@ -797,7 +797,7 @@ button.cta::active::after {
     z-index: -1;
     position: absolute;
     border-radius: 10px 0px 0px 10px;
-    background: linear-gradient(360deg, #dadcdf, #5025d1);
+    background: linear-gradient(360deg, #c0c0c4, #5025d1);
     opacity: 0.15;
 }
 
@@ -830,8 +830,8 @@ button.cta::active::after {
     width: 40%;
     height: 40vh;
     margin: 0px;
-    padding: 10px 0px 0px;
-    border-radius: 5px;
+    padding: 10px 5px;
+    border-radius: 2px;
     position: relative;
     /* background: linear-gradient(360deg, #dadcdf, #5025d1); */
 }
@@ -845,7 +845,8 @@ button.cta::active::after {
     z-index: -1;
     position: absolute;
     border-radius: 0px 10px 10px 0px;
-    background: linear-gradient(360deg, #dadcdf, #5025d1);
+    /* background: linear-gradient(360deg, #dadcdf, #5025d1); */
+    background: linear-gradient(360deg, #c0c0c4, #5025d1);
     opacity: 0.15;
 }
 

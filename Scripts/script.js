@@ -32,3 +32,23 @@ const swiper = new Swiper('.wrapper', {
     //     el: '.swiper-scrollbar',
     // },
 });
+
+
+
+// ...existing code... FOR TESTIMONIALS SWIPER ...
+const testimonialSwiper = new Swiper('.testimonials-swiper', {
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+// ...existing code...

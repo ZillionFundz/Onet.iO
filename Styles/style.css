@@ -15,7 +15,7 @@ a {
     color: #000;
 }
 
-.cta a:hover {
+.cta-button a:hover {
     color: #2d2e2e;
 }
 
@@ -528,91 +528,58 @@ span.description {
     text-align: center;
 }
 
-.cta-btns {
-    max-width: 40vw;
-    max-height: 8.5vh;
+.cta-box {
+    max-width: 45vw;
+    /* max-height: 8.5vh; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 5px 30px;
+    padding: 5px 10px;
     gap: 4px;
+    /* background: red; */
 }
 
-.cta-btns .cta {
-    font-size: clamp(25px, 2vw, 80px);
+.cta-button {
+    font-size: clamp(25px, 3vw, 100px);
     /* font-weight: bold; */
-    width: 45vw;
+    width: 65vw;
     height: auto;
-    border-radius: 10px;
+    border-radius: 40px;
     margin: 0px;
-    padding: 10px 10px;
+    padding: 15px 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-.cta-btns #services {
+.cta-box #services {
     background: #5025D1;
     /* margin: 2px; */
     color: #D3E7F6;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
-.cta-btns #courses {
-    background: #9393aa;
+.cta-box #courses {
+    background: #a7a7c0;
     /* margin: 2px; */
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
-.cta-btns #services:hover {
+.cta-box #services:hover {
     background: #b5c0c9;
-    border-radius: 20px;
+    border-radius: 28px;
     color: #2d2e2e;
 }
 
-.cta-btns #courses:hover {
+.cta-box #courses:hover {
     background: #b5c0c9;
-    border-radius: 20px;
+    border-radius: 28px;
     color: #2d2e2e;
 }
 
 /* RIPPLE EFFECT HERE:👇*/
 
-.cta-btns #services,
-#courses {
-    border: none;
-
-    cursor: pointer;
-    padding: 20px 10px;
-    font-size: clamp(18px, 2vw, 100px);
-    /* box-shadow: -0.1rem 01rem rgba(0, 0, 0, 0.265); */
-    box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
-
-}
-
-button.cta {
-    overflow: hidden;
-    position: relative;
-    background: #000;
-    /* background-image: linear-gradient(135deg, #000, 0%, #000); */
-}
-
-button.cta::after {
-    content: "";
-    background: #fff;
-    position: absolute;
-    padding: 50%;
-    border-radius: 50%;
-    left: 50%;
-    top: 50%;
-    transform: translate(150%, -50%) scale(1);
-    opacity: 0;
-    transition: transform 600ms, opacity 600ms;
-}
-
-button.cta::active::after {
-    transition: 0s;
-    opacity: 0.7;
-    transform: translate(150%, -50%) scale(0);
-}
 
 .parent {
     top: -4px;
@@ -901,7 +868,7 @@ button.cta::active::after {
 
 
 
-/* MEDIA QUERY STARTS FROM HERE! */
+/* MEDIA QUERY STARTS FROM HERE! 👇 */
 
 @media screen and (max-width: 870px) {
     .navbar .hideOnMobile {
@@ -955,6 +922,8 @@ button.cta::active::after {
         z-index: 1;
     }
 
+
+
 }
 
 /* Tablet - SCREEN SIZE */
@@ -978,24 +947,29 @@ button.cta::active::after {
         font-size: clamp(28px, 3vw, 100px);
     }
 
-    .cta-btns {
-        max-width: 100vw;
-        margin: 10px 0px;
-        padding: 5px 20px;
+    .cta-box {
+        max-width: 67vw;
+        /* max-height: 8.5vh; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 5px 10px;
+        gap: 10px;
+        /* background: green; */
     }
 
-    .cta-btns .cta {
-        font-size: 1.8rem;
-        width: 40vw;
-        /* height: 6vh; */
-        border-radius: 10px;
-        margin: 2px 5px;
-        padding: 25px 10px;
-    }
-
-    .cta-btns .cta:hover {
-        border-radius: 15px;
-        background: #a2a5ac;
+    .cta-button {
+        font-size: clamp(28px, 2.5vw, 100px);
+        /* font-weight: bold; */
+        /* width: 0vw; */
+        height: auto;
+        border-radius: 40px;
+        margin: 0px;
+        padding: 15px 10px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
     }
 
     .wrapper1 {
@@ -1083,20 +1057,6 @@ button.cta::active::after {
         margin-top: 5px;
     }
 
-    .cta-btns .cta {
-        font-size: 1.2rem;
-        width: 35vw;
-        /* height: 6.5vh; */
-        border-radius: 10px;
-        margin: 2px 5px;
-        padding: 15px 10px;
-    }
-
-    .cta-btns .cta:hover {
-        border-radius: 10px;
-        background: #a2a5ac;
-    }
-
     .wrapper1 {
         display: flex;
         flex-direction: column;
@@ -1160,6 +1120,31 @@ button.cta::active::after {
         padding: 20px 50px;
     }
 
+    .cta-box {
+        max-width: 67vw;
+        /* max-height: 8.5vh; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 5px 10px;
+        gap: 10px;
+        /* background: green; */
+    }
+
+    .cta-button {
+        font-size: clamp(26px, 2.5vw, 100px);
+        /* font-weight: bold; */
+        /* width: 0vw; */
+        height: auto;
+        border-radius: 40px;
+        margin: 0px;
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+    }
+
 }
 
 
@@ -1196,24 +1181,6 @@ button.cta::active::after {
         width: 90vw;
     }
 
-    .cta-btns {
-        gap: 5px;
-    }
-
-    .cta-btns #services {
-        max-width: 100vw;
-        margin: 10px 0px;
-        padding: 10px 20px;
-        /* background: red; */
-    }
-
-    .cta-btns #courses {
-        max-width: 100vw;
-        margin: 10px 0px;
-        padding: 10px 20px;
-        /* background: red; */
-    }
-
     .explorer-notes h1 {
         font-size: clamp(20px, 4vw, 100px);
         margin: 2px 0px;
@@ -1223,10 +1190,35 @@ button.cta::active::after {
     .explorer-notes p {
         font-size: clamp(16px, 2vw, 80px);
     }
+
+    .cta-box {
+        max-width: 67vw;
+        /* max-height: 8.5vh; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 5px 10px;
+        gap: 10px;
+        /* background: orange; */
+    }
+
+    .cta-button {
+        font-size: clamp(18px, 2vw, 100px);
+        /* font-weight: bold; */
+        /* width: 0vw; */
+        height: auto;
+        border-radius: 40px;
+        margin: 0px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
+    }
 }
 
 /* Phone - SCREEN SIZE (Small)*/
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     .logo img {
         width: 50px;
         margin: 0px;
@@ -1264,5 +1256,30 @@ button.cta::active::after {
 
     .explorer-notes p {
         font-size: clamp(16px, 2vw, 80px);
+    }
+
+    .cta-box {
+        max-width: 67vw;
+        /* max-height: 8.5vh; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 5px 10px;
+        gap: 5px;
+        /* background: indigo; */
+    }
+
+    .cta-button {
+        font-size: clamp(16px, 2vw, 100px);
+        /* font-weight: bold; */
+        /* width: 0vw; */
+        height: auto;
+        border-radius: 40px;
+        margin: 0px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
     }
 }

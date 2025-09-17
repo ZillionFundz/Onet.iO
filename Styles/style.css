@@ -718,41 +718,59 @@ span.description {
 }
 
 .why-choseus {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: auto;
 }
 
+/* .feature-group {
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .feature {
+    /* max-width: 30vw; */
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 45px;
+    margin: 2px;
+    padding: 10px;
+    /* margin-bottom: 45px; */
+    background: #fff;
+    border-radius: 10px;
 }
 
 .feature img {
-    width: 35vw;
-    height: 35vw;
-    margin: 5px;
-    padding: 2px;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 15px;
     border-radius: 20%;
     border: 2px dashed #000;
 }
 
 .feature h3 {
-    font-size: clamp(15px, 2.5vw, 100px);
+    font-size: clamp(16px, 1.5vw, 100px);
     margin: 2px;
     padding: 0px;
-    line-height: 25px;
+    line-height: 3vh;
     text-align: center;
     text-transform: uppercase;
 }
 
 .feature span {
-    font-size: clamp(14px, 2.5vw, 100px);
+    font-size: clamp(14px, 1.2vw, 100px);
     text-align: center;
+    margin: 5px 0px 0px;
 }
 
 
